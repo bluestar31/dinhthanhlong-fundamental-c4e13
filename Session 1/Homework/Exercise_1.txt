@@ -1,0 +1,26 @@
+- How to check variable's type?
+-> Answer:
+	+ We can identify strings if they are enclosed in quotation marks.
+	+ Or we can use a function of Python called "type" which can tell us "what's variable's type?" if we're not sure.
+		For example:
+			>>> type("I'm very handsome!")
+			<class 'str'>
+				-> so this is a string variable.
+			>>> type(17)
+			<class 'int'>
+				-> so this is a integer variable.
+
+-In what cases, you will get SyntaxError from the compiler telling you that some of your variables have invalid names? Can you give 3 different examples of invalid names?
+-> Answer:
+	We will get SyntaxError from the compiler telling us that some of our variables have invalid names in some cases such as:
+		+ We begin variable names with a digit.
+		+ We defined variable names which contains an illegal character (like $, %, ^, ...).
+		+ We defined variable names same as Python keywords.
+
+	3 Examples of invalid names:
+		+ 31bluestar
+			-> Begin with digits "31".
+		+ chicken^age 
+			-> Contains "^" which is an illegal character.
+		+ for
+			-> "for" is the Python keyword.
