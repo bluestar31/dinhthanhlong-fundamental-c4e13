@@ -1,0 +1,9 @@
+1. What is nested list?
+-> Answer:
+	- Nested list is a list has another list within its.
+		Example: fruit = ["Apple", "Orange", ["Grape", "Grapefruit"]]
+
+2. Can a list store both integers and strings in it?
+-> Answer:
+	- Yes, a list can store both integers and strings in it, the elements of a list don't have to be the same type.
+		Example: exam = [1, 2, 3.0, "Pass", "Fail"]
