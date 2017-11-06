@@ -4,15 +4,15 @@ print("Hello, my name is Long and these are my sheep sizes:")
 print(sheep_size)
 print()
 
-max = sheep_size[0]
+max_size = sheep_size[0]
 
 for i in range(len(sheep_size)):
-    if max < sheep_size[i]:
-        max = sheep_size[i]
-print("Now my biggest sheep has size", max, "let's shear it")
+    if max_size < sheep_size[i]:
+        max_size = sheep_size[i]
+print("Now my biggest sheep has size", max_size, "let's shear it")
 
 for i in range(len(sheep_size)):
-    if sheep_size[i] == max:
+    if sheep_size[i] == max_size:
         index_max = i
         break
 sheep_size[index_max] = 8
@@ -37,15 +37,15 @@ for j in range(month_number):
         print("One month has passed, now here is my flock")
         print(sheep_size)
 
-        max = sheep_size[0]
+        max_size = sheep_size[0]
 
         for i in range(len(sheep_size)):
-            if max < sheep_size[i]:
-                max = sheep_size[i]
-        print("Now my biggest sheep has size", max, "let's shear it")
+            if max_size < sheep_size[i]:
+                max_size = sheep_size[i]
+        print("Now my biggest sheep has size", max_size, "let's shear it")
 
         for i in range(len(sheep_size)):
-            if sheep_size[i] == max:
+            if sheep_size[i] == max_size:
                 index_max = i
                 break
         sheep_size[index_max] = 8
