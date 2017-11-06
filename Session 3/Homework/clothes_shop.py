@@ -29,8 +29,13 @@ while menu:
                 break
         clothes_list.remove(clothes_list[delete_position - 1])
         print(*clothes_list, sep = ", ")
-    ask = input("Do you want to countinue with our shop? (Y/N) ")
-    if ask.upper() == "Y":
-        menu = True
-    elif ask.upper() == "N":
-        menu = False
+    while True:
+        ask = input("Do you want to countinue with our shop? (Y/N) ")
+        if ask.upper() == "Y":
+            menu = True
+            break
+        elif ask.upper() == "N":
+            menu = False
+            break
+        else:
+            print("Please try again!")
