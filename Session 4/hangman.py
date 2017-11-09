@@ -60,7 +60,6 @@ word_space = '_' * len(word_random)
 word_space_list = list(word_space)
 
 characters = list(word_random)
-# print(*characters, sep = ', ')
 
 count = 1
 
@@ -74,7 +73,6 @@ while count <= 5:
             if character == guess:
                 guess_index = index
                 word_space_list[guess_index] = guess
-        # print(*word_space_list, sep = ' ')
     else:
         print(image[count])
         count += 1

@@ -10,15 +10,25 @@
 #
 # print(person)
 
-person = {
-    'name': 'Tuan Anh',
-    'age': 22,
-    'home': 'Moc Chau',
-}
+# person = {
+#     'name': 'Tuan Anh',
+#     'age': 22,
+#     'home': 'Moc Chau',
+# }
+#
+# print(person['home'])
+# person['home'] = 'Ha Noi'
+# print(person)
+#
+# person['project_count'] = 2
+# print(person)
 
-print(person['home'])
-person['home'] = 'Ha Noi'
-print(person)
+string = "Heello I'm Long"
 
-person['project_count'] = 2
-print(person)
+letter_counts = {}
+
+for letter in string.replace(" ", ""):
+    letter_counts[letter.lower()] = letter_counts.get(letter, 0) + 1
+print(letter_counts)
+# for letter in string.replace(" ", ""):
+#     print(letter_counts.get(letter, 0) + 1 )
